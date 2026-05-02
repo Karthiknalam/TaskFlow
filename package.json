@@ -1,0 +1,13 @@
+{
+  "name": "project-management-app",
+  "version": "1.0.0",
+  "description": "Full-stack project management web app",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
+    "dev": "npx concurrently \"cd frontend && npm run dev\" \"cd backend && node --watch server.js\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
