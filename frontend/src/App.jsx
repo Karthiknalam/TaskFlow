@@ -14,7 +14,7 @@ import MyTasks from './pages/MyTasks';
 
 // Setup axios defaults
 import axios from 'axios';
-axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || '';
 axios.interceptors.request.use((config) => {
   const user = JSON.parse(localStorage.getItem('user'));
   if (user && user.token) {
