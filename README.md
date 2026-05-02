@@ -43,10 +43,3 @@ This application is fully prepared for a 1-click deployment on Railway using Nix
    - `NODE_ENV`: `production`
 4. The deployment will automatically install root dependencies, build the frontend via `npm run build`, and start the Express server via `npm start`. The Express server automatically serves the compiled Vite assets.
 
-## Submission Video
-To record your demo video:
-1. Show the user registration flow. Create an **Admin** user.
-2. Log in as Admin. Create a Project and some Tasks.
-3. Log out and register a **Member** user.
-4. Log in as the Member and show role restrictions (e.g., cannot create projects). Update a task status to show progress tracking.
-5. Demonstrate the Dashboard updates.
